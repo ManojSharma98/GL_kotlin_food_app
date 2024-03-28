@@ -24,5 +24,9 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.clickHereLogin.setOnClickListener {
+            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+            finish()
+        }
     }
 }
