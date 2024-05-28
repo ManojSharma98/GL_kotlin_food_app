@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="20dp"
+
+    android:padding="10dp"
     tools:context=".activities.RegisterActivity">
 
     <ImageView
@@ -22,7 +23,7 @@
         android:id="@+id/username_edittext"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Username"
+        android:hint="Username"
         android:paddingHorizontal="10dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/edittext_background"
@@ -35,7 +36,7 @@
         android:layout_marginTop="10dp"
         android:layout_height="60dp"
         android:paddingHorizontal="10dp"
-        android:text="Mobile"
+        android:hint="Mobile"
         android:background="@drawable/edittext_background"
         app:layout_constraintTop_toBottomOf="@+id/username_edittext" />
 
@@ -46,7 +47,7 @@
         android:layout_height="60dp"
         android:paddingHorizontal="10dp"
         android:layout_marginTop="10dp"
-        android:text="Email"
+        android:hint="Email"
         android:background="@drawable/edittext_background"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -59,7 +60,7 @@
         android:height="60dp"
         android:background="@drawable/edittext_background"
         android:paddingHorizontal="10dp"
-        android:text="Password"
+        android:hint="Password"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
         tools:layout_editor_absoluteX="20dp" />
 
@@ -81,8 +82,9 @@
         android:layout_height="wrap_content"
         android:text="Already register? Click Here"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/register_button"
         app:layout_constraintStart_toStartOf="@+id/register_button"
